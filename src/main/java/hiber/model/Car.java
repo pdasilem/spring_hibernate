@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Car {
 
     @Id
-    @Column(name = "user_id")
+    @Column
     private long id;
 
     @Column
@@ -54,9 +54,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
-                "model='" + model + '\'' +
-                ", series=" + series +
-                '}';
+        return "Car model: " + model + ", series: " + series;
     }
 }
